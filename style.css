@@ -1,0 +1,72 @@
+body {
+    z-index: 0;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 0;
+    overflow-x: hidden;
+    background-image: url("./images/orange.png");
+    backdrop-filter: blur(15px);
+    image-rendering: pixelated;
+
+    font-smooth: none;
+    -webkit-font-smoothing: never;
+
+    font-size: 24px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.content {
+    transform: translateY(0px);
+
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1rem;
+    background-color: orange;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 1px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.3);
+
+}
+
+.content b {
+    font-family: "Silkscreen", sans-serif;
+    font-kerning: none;
+}
+
+.content i {
+    font-size: 16px;
+    font-display:unset;
+}
+
+
+.socials {
+    text-align: center;
+    padding: 3px;
+    align-content: center;
+    background-color: coral;
+    border-radius: 1px;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 0 20px 20px #0000004d;
+}
+
+.answers {
+    max-width: max-content;
+    padding: 2rem;
+    border-style: outset;
+    border-color: orangered;
+}
+
+.computer {
+    float: right;
+}
+
+.links {
+    line-height: 2px;
+    text-align: left;
+    padding: 6px;
+}
