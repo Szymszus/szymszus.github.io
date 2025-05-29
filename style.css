@@ -1,16 +1,16 @@
 body {
-    z-index: 0;
-    font-family: "Tiny5", sans-serif;
-    font-weight: 0;
-    overflow-x: hidden;
-    background-image: url("./images/orange.png");
-    backdrop-filter: blur(15px);
-    image-rendering: pixelated;
-
     font-smooth: none;
     -webkit-font-smoothing: never;
-
+    font-family: "Tiny5", sans-serif;
     font-size: 24px;
+
+    z-index: 0;
+    overflow-x: hidden;
+    background-image: url("./images/orange.png");
+    background-attachment: fixed;
+    
+    backdrop-filter: blur(15px);
+    image-rendering: pixelated;
 }
 
 body::-webkit-scrollbar {
@@ -35,12 +35,23 @@ body::-webkit-scrollbar {
 .content b {
     font-family: "Silkscreen", sans-serif;
     font-kerning: none;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+    transform: translateX(20px);
 }
 
 .content i {
     font-size: 16px;
     font-display:unset;
 }
+
+.content ul li {
+    list-style-image: url("./images/bullet-point.png");
+}
+
+.content ul li li {
+    list-style-image: url("./images/sub-bullet-point.png");
+}
+
 
 
 .socials {
@@ -51,7 +62,7 @@ body::-webkit-scrollbar {
     border-radius: 1px;
     border-width: 5px;
     border-style: solid;
-    box-shadow: 0 20px 20px #0000004d;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .answers {
@@ -59,6 +70,7 @@ body::-webkit-scrollbar {
     padding: 2rem;
     border-style: outset;
     border-color: orangered;
+    border-width: 4px;
 }
 
 .computer {
