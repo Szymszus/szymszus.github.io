@@ -26,11 +26,21 @@ table {
 
 th, td {
     border-style: solid;
-    border-color: rgb(202, 0, 0);
-    background-color: rgb(202, 0, 0);
+
     gap: 0px;
     border-radius: 5px;
     padding: 2px;
+
+    border-bottom: 6px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+
+    animation-fill-mode: backwards;
+}
+
+th:hover, td:hover {
+    animation: color-table-hover 0.2s ease forwards;
 }
 
 p {
@@ -65,20 +75,22 @@ p {
     background-color: orangered;
 
     border-radius: 20px;
-    border-right: 5px;
-    border-left: 5px;
-    border-top: 0;
-    border-bottom: 0;
+    border-bottom: 6px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
     border-style: solid;
 
     opacity: 0;
     scale: 0 0;
     transform: translateY(50px);
-    animation: enter 0.5s ease forwards;
+    animation: enter 0.3s ease forwards;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
+
+    box-shadow: 0px 10px 50px;
 }
 
 .social-item {
@@ -86,6 +98,14 @@ p {
     color: black;
     padding: 10px;
     border-radius: 15px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-item-item {
+
 }
 
 .flex-box {
@@ -112,16 +132,13 @@ p {
     background-color: orange;
 
     border-radius: 20px;
-    border-right: 5px;
-    border-left: 5px;
+    border-right: 0;
+    border-left: 0;
     border-top: 0;
-    border-bottom: 0;
+    border-bottom: 10px;
     border-style: solid;
 
-    opacity: 0;
-    scale: 0 0;
-    transform: translateY(-100px);
-    animation: enter 0.5s ease forwards;
+    box-shadow: 0px 10px 50px;
 }
 
 .final-touch {
@@ -135,5 +152,12 @@ p {
         opacity: 1;
         transform: translateY(0);
         scale: 1 1;
+    }
+}
+
+@keyframes color-table-hover {
+    to {
+        transform: translateY(-10px);
+        background-color: darkred;
     }
 }
