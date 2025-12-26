@@ -1,0 +1,8 @@
+{
+    "test_anime": {
+        "anime_title": "title", 
+        "rating": "4/5",
+        "review": "really long text",
+        "image_source": "url"
+    }
+}
