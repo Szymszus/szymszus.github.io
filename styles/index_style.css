@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Press+Start+2P&family=Tiny5&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: orange;
+    background-color: rgb(16, 16, 16);
+
+    height: 100dvh;
+
+    overflow: hidden;
+}
+
+body {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+nav > button {
+    all: unset;
+
+    font-family: 'Press Start 2p';
+    text-align: center;
+
+    background-color: rgb(240, 140, 0, 0.5);
+
+    padding: 12px;
+
+    flex-grow: 1;
+    width: 0;
+}
+
+nav > button:hover {
+    background-color: rgb(255, 190, 50, 0.6);
+    color: yellow;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+
+    font-family: 'Tiny5';
+}
+
+a {
+    color: orange;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.content-window {
+    border: solid;
+
+    padding: 12px;
+
+    flex-grow: 1;
+}

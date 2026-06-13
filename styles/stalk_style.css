@@ -1,0 +1,36 @@
+table {
+    border: solid orange;
+    border-collapse: separate;
+    border-spacing: 8px;
+
+    padding: 4px;    
+}
+
+th, td {
+    padding: 8px;
+
+    
+
+    width: 50%;
+}
+
+th {
+    font-family: 'Press Start 2p';
+    font-weight: 100;
+}
+
+tr {
+    background-color: rgb(2, 2, 2, 0.5);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(6, 6, 6, 0.5);
+}
+
+.content > img {
+    height: 320px; 
+    width: 320px;
+
+    align-self: center;
+    border-radius: 24px;
+}

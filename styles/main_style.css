@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Press+Start+2P&family=Tiny5&display=swap');
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    height: 100dvh;
+}
+
+h1 {
+    all: unset;
+
+    display: block;
+    border: solid white;
+    border-width: 0px 0px 4px 0px;
+
+    padding: 8px;
+
+    color: white;
+
+    font-family: 'Press Start 2p';
+    font-size: 32px;
+
+    text-align: center;
+}
+
+p {
+    margin: 24px;
+}
+
+i {
+    all: unset;
+
+    font-family: 'Bytesized';
+    font-size: 16px;
+
+    color: dimgray;
+}
+
+u {
+    color: salmon;
+}
+
+a {
+    color: orange;
+}
+
+a:hover {
+    color: yellow;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+
+    color: white;
+
+    font-family: 'Tiny5';
+    font-size: 24px;
+
+    max-width: 800px;
+    width: 800px;
+}
+
+.content-window {
+    border: solid white;
+
+    padding: 24px;
+}
